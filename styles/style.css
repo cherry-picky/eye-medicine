@@ -4,6 +4,7 @@ html, body {
 
 body {
   margin: 0;
+  background-color: #005494;
 }
 
 .wrap {
@@ -22,10 +23,9 @@ body {
 
 .sidebar {
   width: 211px;
-  height: 3517px;
+  height: 100vw;
   float: left;
   padding-top: 15px;
-  background-color: #005494;
   box-sizing: border-box;
 }
 
@@ -162,17 +162,16 @@ header {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-
 }
 
 .products .blue-eye {
-  background: url("../images/eye_1.png") no-repeat center center;
+  background: url("../images/tired-eye.png") no-repeat center center;
   background-color: #4282ad;
   background-size: 35%;
 }
 
 .products .blue-eye:hover {
-  background: url("../images/eye_1_active.png") no-repeat center center;
+  background: url("../images/tired-eye_active.png") no-repeat center center;
   background-color: #4282ad;
   background-size: 50%;
   content: none;
@@ -188,81 +187,422 @@ header {
 
 
 .products .red-eye {
-  background: url("../images/eye_2.png") no-repeat center center;
+  background: url("../images/vascular-eye.png") no-repeat center center;
   background-color: #cd5463;
   background-size: 35%;
 }
 
 .products .red-eye:hover {
-  background: url("../images/eye_2_active.png") no-repeat center center;
+  background: url("../images/vascular-eye_active.png") no-repeat center center;
   background-color: #cd5463;
   background-size: 35%;
 }
 
 .products .green-eye {
-  background: url("../images/eye_3.png") no-repeat center center;
+  background: url("../images/healthy-eye.png") no-repeat center center;
   background-color: #2bb673;
   background-size: 35%;
 }
 
 .products .green-eye:hover {
-  background: url("../images/eye_3_active.png") no-repeat center center;
+  background: url("../images/healthy-eye_active.png") no-repeat center center;
   background-color: #2bb673;
   background-size: 35%;
 }
 
 .products .yellow-eye {
-  background: url("../images/eye_4.png") no-repeat center center;
+  background: url("../images/old-eye.png") no-repeat center center;
   background-color: #fbb040;
   background-size: 35%;
 }
 
 .products .yellow-eye:hover {
-  background: url("../images/eye_4_active.png") no-repeat center center;
+  background: url("../images/old-eye_active.png") no-repeat center center;
   background-color: #fbb040;
   background-size: 35%;
 }
 
 .slider {
   height: 608px;
+  background: url('../images/slider-eye.png') no-repeat 91% 38%;
   background-color: #d1e4f3;
+  position: relative;
+}
+
+.slider-description-wrap {
+  position: relative;
+  float: left;
+  color: #000000;
+  margin-top: 8%;
+}
+
+.slider-header {
+  margin-bottom: 50px;
+  padding-left: 50px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.slider-description {
+  width: 420px;
+  height: 156px;
+  padding-left: 95px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.slider-image-wrap {
+  float: left;
+  margin-top: 65px;
+  margin-left: -10px;
+  position: relative;
+}
+
+.slider-image-description {
+  width: 191px;
+  height: 40px;
+  position: absolute;
+  right: 25%;
+  bottom: 25%;
+  color: #005494;
+  font-size: 11px;
+  font-style: italic;
+  line-height: 16px;
+}
+
+.slider-button-left {
+  width: 58px;
+  height: 116px;
+  position: absolute;
+  top: 40%;
+  background: url('../images/arrow-left.png') no-repeat 8px 42px;
+  background-color: #005494;
+  border-top-right-radius: 58px;  
+  border-bottom-right-radius: 58px; 
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.slider-button-right {
+  width: 58px;
+  height: 116px;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  background: url('../images/arrow-right.png') no-repeat 16px 42px;
+  background-color: #005494;
+  border-top-left-radius: 58px;  
+  border-bottom-left-radius: 58px; 
+  cursor: pointer;
+}
+
+.slider-button-right:hover {
+  opacity: 0.5;
+}
+
+.slider-button-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.slider-button-bottom input[type=radio] {
+  display: none;
+} 
+
+.slider-controls {
+  position: relative;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  margin: 0 40px 32px 0;
+  border: 3px solid #005494;
+  border-radius: 50%;  
+  cursor: pointer;
+  padding-top: 4px;
+  color: #005494;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.slider-control-line-1-2,
+.slider-control-line-2-3,
+.slider-control-line-3-4 {
+  width: 44.5px;
+  border-top: 3px solid #005494;
+  position: absolute;
+  top: 15px;
+}
+
+.slider-control-line-1-2 {
+  left: 33px;
+}
+
+.slider-control-line-2-3 {
+  left: 110.5px;  
+}
+
+.slider-control-line-3-4 {
+  left: 187.8px;  
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"],
+#btn-4:checked ~ .slider-controls label[for="btn-4"] {
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
 .groups-of-risk {
   height: 608px;
+  position: relative;
+  background: url("../images/student-image.png") no-repeat 70px 136px,
+              url("../images/background.png") no-repeat;
   background-color: #005495;
 }
 
+.groups-of-risk-description {
+  padding-top: 75px;
+  padding-left: 50%;
+}
+
+.groups-of-risk-header {
+  padding-top: 50px;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.groups-of-risk-description-header {
+color: #ffffff;
+font-size: 24px;
+font-weight: bold;
+}
+
+.groups-of-risk-description-text {
+  width: 442px;
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.groups-of-risk button {
+  width: 118px;
+  height: 40px;
+  margin-top: 32px;
+  background-color: #005495;
+  border: none;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+  color: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.groups-of-risk button:hover {
+  opacity: 0.5;
+}
+
+.groups-of-risk-slider {
+  width: 520px;
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.groups-of-risk-slider input[type=radio] {
+  display: none;
+} 
+
+.groups-of-risk-slider-controls {
+  position: relative;
+}
+
+.groups-of-risk-slider-controls label {
+  display: inline-block;
+  margin: 5px;
+  background-color: #ffffff;
+  border-radius: 50px;  
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #4282ad;
+  font-size: 13px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#btn-1:checked ~ .groups-of-risk-slider-controls label[for="btn-1"],
+#btn-2:checked ~ .groups-of-risk-slider-controls label[for="btn-2"],
+#btn-3:checked ~ .groups-of-risk-slider-controls label[for="btn-3"],
+#btn-4:checked ~ .groups-of-risk-slider-controls label[for="btn-4"],
+#btn-4:checked ~ .groups-of-risk-slider-controls label[for="btn-5"] {
+  background-color: #4282ad;
+  color: #ffffff;
+}
+
 .test-and-buy .col-6 {
-  height: 1061px;
+  height: 610px;
+  box-sizing: border-box;
 }
 
 .test-and-buy .test {
   background-color: #ffffff;
 }
 
+.test-header {
+  margin: 90px 40px 40px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.test-description {
+  width: 391px;
+  margin-left: 40px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.test button {
+  width: 250px;
+  height: 80px;
+  margin-top: 40px; 
+  margin-left: 140px; 
+  background-color: #ffffff;
+  border: none;
+  border: 3px solid #005495;
+  border-radius: 50px;
+  color: #005494;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.test button:hover {
+  opacity: 0.5;
+}
+
+.test-note {
+  width: 355px;
+  margin-top: 170px;
+  margin-left: 95px;
+  padding-left: 45px;
+  background: url("../images/check.png") no-repeat;
+  color: #005494;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
 .test-and-buy .buy {
+  background: url("../images/map.png") no-repeat 25% -52%;
   background-color: #4282ad;
 }
 
+.buy-header {
+  margin: 90px 40px 40px;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.buy-description {
+  width: 391px;
+  margin-left: 40px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.buy button {
+  width: 250px;
+  height: 80px;
+  margin-top: 65px; 
+  margin-left: 140px; 
+  background-color: #4282ad;
+  border: none;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.buy button:hover {
+  opacity: 0.5;
+}
+
 .footer-attention {
-  height: 186px;
   background-color: #ffffff;
+  padding: 4% 1%;
   box-shadow: 0px 70px 40px -70px rgba(66, 130, 173,0.6) inset;
+  color: #b6b6b6;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+  font-weight: lighter;
+  line-height: 50px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .footer-contacts {
-  height: 186px;
+  height: 174px; 
+  padding-top: 65px;
   box-shadow: 0px 70px 40px -70px rgba(66, 130, 173,0.6) inset;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-sizing: border-box;
 }
+
+.footer-logo img {
+  width: 178px;
+}
+
+.footer-contact {
+  width: 370px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #929292;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.footer-creator-logo {
+  padding-top: 5px;
+  padding-left: 100px; 
+  background: url('../images/itsoft_logo.png') no-repeat;
+  color: #929292;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer-creator-logo .underline {
+  text-decoration: underline;
+}
+
+.footer-creator-logo .bold-italic {
+  font-weight: bold;
+  font-style: italic;
+}
+
 
 /* start addaptive styles */
 
 /* tablet version  */
 
-@media screen and (max-width: 850px) {
-
+@media screen and (max-width: 768px) {
   .sidebar {
     display: none;
   }
@@ -272,10 +612,11 @@ header {
   }
 
   .col-6 {
-    width: 50%;
+    width: 100%;
   }
 
   .products .col-6 {
+    width: 50%;
     min-height: 50vw;
     background-size: 40%;
     padding-bottom: 25%;
@@ -307,12 +648,279 @@ header {
 }
 /* mobile version */
 
-@media screen and (max-width: 600px) {
-  .col-6 {
+@media screen and (max-width: 414px) {
+  .products .col-6 {
     width: 100%;
+    height: 100vw;
+    background-size: 50%;
+    background-position: center 60%;
   }
 
-  .products .col-6 {
-    height: 100vw;
+  .products .col-6:hover {
+    background-size: 50%;
+    background-position: center 60%;
   }
+
+  .products .blue-eye:hover {
+    background-size: 76%;
+    background-position: 39% 32%;
+  }
+
+  .eye-header {
+    padding-top: 10%;
+    padding-left: 5%;
+  }
+
+  .eye-header-2 {
+    padding-top: 10%;
+    padding-left: 60%;
+  }
+
+  .slider {
+    height: 180vw;
+    background-position: 55% 70%; 
+    background-size: 75%;
+  }
+
+  .slider-description-wrap {
+    margin-top: 14%;
+  }
+
+  .slider-header {
+    padding-left: 8%;
+    margin-bottom: 10%;
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .slider-description {
+    width: 75%;
+    padding-left: 15%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .slider-image-description {
+    bottom: 18%;
+    right: 40%;
+    font-size: 10px;
+  }
+
+  .slider-button-bottom {
+    margin-left: 25%;
+  }
+
+  .slider-controls label {
+    width: 30px;
+    height: 30px;
+    margin: 0 25px 30px 0;
+  }
+
+  .slider-control-line-1-2,
+  .slider-control-line-2-3,
+  .slider-control-line-3-4 {
+    width: 30px;
+  }
+
+  .slider-control-line-1-2 {
+    left: 30px;
+  }
+
+  .slider-control-line-2-3 {
+    left: 88.5px;
+  }
+
+  .slider-control-line-3-4 {
+    left: 148.8px;
+  }
+
+  .groups-of-risk {
+    height: 160vw;
+    background: url('../images/background.png') no-repeat; 
+    background-size: cover;
+  }
+
+  .groups-of-risk-description {
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 5%;
+  }
+
+  .groups-of-risk-description-text {
+    width: 90%;
+  }
+
+  .groups-of-risk-slider {
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  text-align: center;
+  }
+
+  .groups-of-risk button {
+    margin-left: 5%;
+  }
+
+  .groups-of-risk-slider-controls label {
+    margin: 3px;
+    font-size: 13px;
+  }
+
+  .test-and-buy .col-6 {
+    height: 130vw;
+  }
+
+  .test-header {
+    margin: 15% 10% 10%;
+  }
+
+  .test-description {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .test button {
+    margin-left: 20%;
+  }
+
+  .test-note {
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+
+  .test-and-buy .buy {
+    background-position: 10% -25%;
+  }
+
+  .buy-description {
+    width: 90%;
+  }
+
+  .buy button {
+    margin-left: 20%;
+  }
+
+  .footer-attention {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .footer-contacts {
+    height: 60vw;
+    padding-top: 5%; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-contact {
+    width: 66%;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) and (min-width: 320px) {
+  .body {
+    min-width: 320px;
+  }
+
+  .slider-header {
+    margin-bottom: 8%;
+  }
+
+  .slider-description {
+    padding-left: 17%;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .slider-image-description {
+    bottom: 17%;
+    right: 34%;
+  }
+
+  .slider-button-bottom {
+    margin-left: 16%;
+  }
+
+  .groups-of-risk {
+    height: 185vw;
+  }
+
+  .groups-of-risk-header {
+    padding-top: 15%;
+    font-size: 34px;
+  }
+
+  .groups-of-risk-description {
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 5%;
+  }
+
+  .groups-of-risk-description-text {
+    width: 90%;
+  }
+
+  .groups-of-risk-slider {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  }
+
+  .groups-of-risk-slider-controls label {
+    font-size: 12px;
+  }
+
+  .groups-of-risk button {
+    margin-left: 5%;
+  }
+
+  .test-and-buy .col-6 {
+    height: 150vw;
+  }
+
+  .test-header,
+  .buy-header {
+    margin: 0;
+    margin-top: 15%;
+    text-align: center;
+  }
+
+  .test-description,
+  .buy-description {
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+  }
+
+  .test button {
+    margin: 5% 10%;
+  }
+
+  .test-note {
+    width: 80%;
+    padding-left: 40px;
+  }
+
+  .buy-description {
+    margin-top: 20%;
+  }
+
+  .buy button {
+    margin: 20% 10%;
+  }
+
+  .footer-attention {
+    line-height: 30px;
+  }
+
+  .footer-contact {
+    width: 70%;
+    font-size: 12px;
 }

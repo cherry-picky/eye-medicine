@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Eyes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/grid.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel='stylesheet' href='packages/font-awesome-4.7.0/css/font-awesome.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/577652a882.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -75,26 +78,88 @@
         </section>
 
         <div class="row slider">
-          <div class="col-12">Столбец 6</div>
+          <div class="col-12">
+            <div class="slider-description-wrap">
+              <div class="slider-header">В чем причина<br>ухудшения зрения?</div>
+              <div class="slider-description">Любой свет, особенно интенсивный искусственный, повреждает глаза. Световые лучи, проходя сквозь глаз, фокусируются на сетчатке в области желтого пятна - особой области, которая отвечает за максимальную остроту зрения</div>
+            </div>
+            <div class="slider-image-description"><b>Желтое пятно</b> (лат. macula lutea) — место наибольшей остроты зрения в сетчатке глаза</div>
+            <div class="slider-button-left"></div>
+            <div class="slider-button-right"></div>            
+            <div class="slider-button-bottom">
+              <input type="radio" id="btn-1" name="toggle" checked>
+              <input type="radio" id="btn-2" name="toggle">
+              <input type="radio" id="btn-3" name="toggle">
+              <input type="radio" id="btn-4" name="toggle">
+              <div class="slider-controls">
+                <label for="btn-1">1</label>
+                <label for="btn-2">2</label>
+                <label for="btn-3">3</label>
+                <label for="btn-4">4</label>
+                <div class="slider-control-line-1-2"></div>
+                <div class="slider-control-line-2-3"></div>
+                <div class="slider-control-line-3-4"></div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="row groups-of-risk">
-          <div class="col-12">Столбец 7</div>
+          <div class="col-12">
+            <div class="groups-of-risk-header">Группы риска:</div>
+            <div class="groups-of-risk-description">
+              <div class="groups-of-risk-description-header">Школьники и студенты</div>
+              <div class="groups-of-risk-description-text">В последнее десятилетие врачи отмечают печальную тенденцию: все чаще у детей школьного возраста выявляются болезни органов зрения. Сложный оптический прибор, идеально приспосабливающийся к изменчивым условиям окружающей среды, глаз оказался не подготовленным к современным реалиям.</div>
+              <button>Подробнее</button>
+            </div>
+            <div class="groups-of-risk-slider">
+              <input type="radio" id="btn-1" name="toggle">
+              <input type="radio" id="btn-2" name="toggle" checked>
+              <input type="radio" id="btn-3" name="toggle">
+              <input type="radio" id="btn-4" name="toggle">
+              <input type="radio" id="btn-5" name="toggle">
+              <div class="groups-of-risk-slider-controls">
+                <label for="btn-1">Работающие за компьютером</label>
+                <label for="btn-2">Школьники и студенты</label>
+                <label for="btn-3">Автолюбители</label>
+                <label for="btn-4">Люди с повышенными зрительными нагрузками</label>
+                <label for="btn-5">Туристы</label>
+              </div>
+            </div>
+          </div>
         </div>
 
         <section class="test-and-buy">
           <div class="row">
-            <div class="col-6 test">Столбец 8</div>
-            <div class="col-6 buy">Столбец 9</div>
+            <div class="col-6 test">
+              <div class="test-header">On-line тест</div>
+              <div class="test-description">Мы предлагаем пройти небольшой тест, который поможет легко и комфортно проверить <b>остроту</b>, <b>контрастность</b> и <b>цветовосприятие</b> вашего зрения.</div>
+              <button class="test-button">Пройти тест</button>
+              <div class="test-note">Если по результатам теста Вы отметите ухудшение зрения, Вам следует обратиться к офтальмологу за дополнительной консультацией.</div>
+            </div>
+
+            <div class="col-6 buy">
+              <div class="buy-header">Где купить</div>
+              <div class="buy-description">Препараты можно преобрести в аптеках по всей России,а так же в интернет аптеках</div>
+              <button class="buy-button">Подробнее</button>
+            </div>
           </div>
         </section>
 
         <footer>
           <div class="row footer-attention">
-            <div class="col-12">Столбец 10</div>
+            <div class="col-12">ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. ПЕРЕД ПРИМЕНЕНИЕМ ОЗНАКОМЬТЕСЬ С ИНСТРУКЦИЕЙ И ПРОКОНСУЛЬТИРУЙТЕСЬ СО СПЕЦИАЛИСТОМ</div>
           </div>
-          <div class="row footer-contacts">
-            <div class="col-12">Столбец 2</div>
+          <div class="row">
+            <div class="col-12 footer-contacts">
+              <div class="footer-logo"><img src="images/logo_2.png"></div>
+              <div class="footer-contact">
+                ООО «ВАЛЕАНТ», 115162, г. Москва, ул. Шаболовка, д. 31, стр. 5<br>
+                Тел./Факс: +7 495 510-2879<br>
+                www.valeant.com
+              </div>
+              <div class="footer-creator-logo"><span class="underline">Создание сайта</span>.<br>Веб-студия <span class="bold-italic">itsoft<span></div>
+            </div>
           </div>
         </footer>
 
